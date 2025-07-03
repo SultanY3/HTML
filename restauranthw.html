@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Restoran</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url('bg-hero.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+    }
+
+    .text {
+      max-width: 50%;
+    }
+
+    .text h1 {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #FEA116;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image {
+      max-width: 50%;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 50%;
+      animation: spin 20s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text, .image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+   <div style="height: 50px; padding-top: 10px;display: flex;justify-content: right;">
+        
+        <ul style="display: flex;list-style-type: none;gap: 10px;">
+            <li><a href="" style="text-decoration: none;  color: white;padding: 10px;border-radius: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">HOME</a></li>
+            <li><a href="" style="text-decoration: none;  color: white;padding: 10px;border-radius: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">ABOUT</a></li>
+            <li><a href="" style="text-decoration: none;  color: white;padding: 10px;border-radius: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">SERVICE</a></li>
+            <li><a href="" style="text-decoration: none;  color: white;padding: 10px;border-radius: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">MENU</a></li>
+            <li>
+                <select name="" id="" style="background-color: transparent; color: white; border: none; font-size: medium;">
+                    <option selected disabled>PAGES</option>
+                    <option style="color: black;">Booking</option>
+                    <option style="color: black;">Our Team</option>
+                    <option style="color: black;">Testimonial</option>
+                </select>
+            </li>
+            <li><a href="" style="text-decoration: none;  color: white;padding: 10px;border-radius: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">CONTACT</a></li>
+            <li><a href="" style="text-decoration: none;background-color: orange;  color: white;padding: 8px;border-radius: 2px; font-family: Verdana, Geneva, Tahoma, sans-serif;">BOOK A TABLE</a></li>
+
+        </ul>
+
+    </div>
+
+    <div>
+        <h1 style="margin-left: 0px; color: orange;">Restoran</h1>
+    </div>
+
+  <div class="container">
+    <div class="text">
+      <h1>Enjoy Our Delicious Meal</h1>
+      <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+      <a href="#" class="btn">BOOK A TABLE</a>
+    </div>
+    <div class="image">
+      <img src="hero.png" alt="Grilled Food">
+    </div>
+  </div>
+
+</body>
+</html>
