@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESTORAN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(bg-hero.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+        }
+        
+        .navbar {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            gap: 15px;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgb(252, 162, 7);
+            font-size: 36px;
+            font-family: cursive;
+        }
+
+        .fork {
+            width: 80px;
+            height: 50px;
+
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 2px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: orange;
+            animation: colordelay 1s;
+        }
+
+        @keyframes colordelay {
+            from {
+                color: white;
+            }
+
+            to {
+                color: orange;
+            }
+        }
+
+        .navbar a.home-1 {
+            color: orange;
+            animation: none;
+        }
+
+        .navbar select {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+
+        .navbar .btn {
+            background-color: rgb(252, 162, 7);
+            padding: 8px;
+            color: white !important;
+            animation: none;
+        }
+
+        .content {
+            padding: 100px 50px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2 {
+            color: rgb(252, 162, 7);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        p {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .hero-img {
+            height: 550px;
+            width: 550px;
+            border-radius: 50%;
+            position: fixed;
+            right: 50px;
+            top: 100px;
+            animation: example 50s linear infinite;
+        }
+
+        @keyframes example {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .button2 {
+            margin-top: 30px;
+            width: 170px;
+            height: 50px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .page:hover {
+            cursor: pointer;
+            animation: colordelay2 1s;
+        }
+
+        @keyframes colordelay2 {
+            from {
+                color: white;
+            }
+
+            to {
+                color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="spoon-and-fork (1).png" alt="Logo" class="fork" />
+                <h2><b>Restoran</b></h2>
+            </div>
+            <ul>
+                <li><a href="" class="home-1">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">MENU</a></li>
+                <select class="page">
+                    <option disabled selected>PAGES</option>
+                    <option style="color:black;">Booking</option>
+                    <option style="color:black;">Our Team</option>
+                    <option style="color:black;">Testimonial</option>
+                </select>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="" class="btn">BOOK A TABLE</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1><b>Enjoy Our</b><br><b>Delicious Meal</b></h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et<br>
+                eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore<br> erat amet
+            </p>
+            <button type="submit" class="button2">BOOK A TABLE</button>
+        </div>
+
+        <img src="hero.png" alt="" class="hero-img" />
+
+</body>
+</html>
