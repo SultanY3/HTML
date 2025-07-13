@@ -68,32 +68,35 @@
 
 // <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
-let mark = 87;
-switch (true) {
-  case (mark === 100):
-    console.log("O grade");
-    break;
-  case (mark >= 90):
-    console.log("A+ grade");
-    break;
-  case (mark >= 80):
-    console.log("A grade");
-    break;
-  case (mark >= 70):
-    console.log("B+ grade");
-    break;
-  case (mark >= 60):
-    console.log("B grade");
-    break;
-  case (mark >= 50):
-    console.log("C+ grade");
-    break;
-  case (mark >= 40):
-    console.log("C grade");
-    break;
-  case (mark < 40):
-    console.log("Failed");
-    break;
-  default:
-    console.log("Invalid mark");
-}
+// let mark = 87;
+// switch (true) {
+//   case (mark === 100):
+//     console.log("O grade");
+//     break;
+//   case (mark >= 90):
+//     console.log("A+ grade");
+//     break;
+//   case (mark >= 80):
+//     console.log("A grade");
+//     break;
+//   case (mark >= 70):
+//     console.log("B+ grade");
+//     break;
+//   case (mark >= 60):
+//     console.log("B grade");
+//     break;
+//   case (mark >= 50):
+//     console.log("C+ grade");
+//     break;
+//   case (mark >= 40):
+//     console.log("C grade");
+//     break;
+//   case (mark < 40):
+//     console.log("Failed");
+//     break;
+//   default:
+//     console.log("Invalid mark");
+// }
+
+// <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
