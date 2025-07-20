@@ -43,5 +43,16 @@
 //     .then(data => console.log(data))
 //     .catch(error => console.error("Error:", error));
 
+// <><><><><>Using try, catch, and finally<><><><><>
+
+// try {
+//     let result = 10/0;
+//     console.log("Result:",result);
+// } catch {
+//     console.error("An error occured:",error.message);
+// } finally {
+//     console.log("EWxecution finished.")
+// }
+
 
 
