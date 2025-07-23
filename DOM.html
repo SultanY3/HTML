@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+
+        .highlight {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="Pillar"> Under pillar number 329 in edapally you can finde mmomis new business</h2>
+    <p id="PLAYER">red light green light</p>
+    <p id="MomiG">Momi is the number one top G in the world</p>
+    <p>Fahad is momis bast friend</p>
+
+    <ol>
+        <li>momi</li>
+        <li>fahad</li>
+        <li>rashi</li>
+        <li>siru</li>
+    </ol>
+
+
+
+    <div class="box">Hello</div>
+    <br><br>
+
+    <button>hola</button>
+    <br><br>
+    <button id="myButton">hello</button>
+    <br><br>
+    <form>
+        <input type="text">
+    </form>
+    <br><br>
+
+    <div class="div1">MOMIGAY</div>
+    <br><br><br><br>
+
+
+
+
+    <a href="https://wconeteam.pages.dev/subjects">Moyandh Momi</a>
+
+    <script>
+        // const heading = document.getElementById("MomiG");
+        // console.log(heading);
+        // const paragraph = document.querySelector("p")
+        // console.log(paragraph)
+        const listItems = document.querySelectorAll("li");
+        // listItems.forEach(item => console.log(item));
+        console.log(listItems)
+        const heading = document.getElementById("Pillar");
+        heading.innerText = "Welcome to pillar 329";
+
+        const container = document.getElementById("PLAYER");
+        container.innerHTML = "<strong>PLAYER 329 MOMI</strong>";
+
+        const link = document.querySelector("a");
+        link.setAttribute("href", "https://github.com/SultanY3/HTML")
+
+        const box = document.querySelector(".box");
+        box.classList.add("highlight");
+        box.classList.remove("highlight");
+
+        const newDiv = document.createElement("div");
+        newDiv.innerText = "This is a new div!";
+        document.body.appendChild(newDiv);
+
+        const button = document.getElementById("myButton");
+        button.addEventListener("click", () => alert("Button clicked!"));
+
+        document.querySelector("button").addEventListener("click", () => {
+            console.log("Button clicked!");
+        });
+
+        document.querySelector(".div1").addEventListener("mouseover", () => {
+            console.log("Mouse over!");
+        });
+
+        document.querySelector("input").addEventListener("input", event => {
+            console.log(event.target.value);
+        });
+
+
+
+    </script>
+</body>
+
+</html>

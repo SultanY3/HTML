@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Live Registeration Form</h2>
+
+    <form id="registerationForm">
+        <div>
+            <label for="">Name: </label>
+            <input type="text" id="name" />
+            <span id="nameError" class="error"></span>
+        </div>
+        <div>
+            <label for="">Email: </label>
+            <input type="text" id="email" />
+            <span id="emailError" class="error"></span>
+        </div>
+        <div>
+            <label for="">Password: </label>
+            <input type="password" id="password" />
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div>
+            <label for="">Age: </label>
+            <input type="number" id="age" />
+            <span id="ageError" class="error"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+            const ageInput = document.getElementById("age");
+
+            nameInput.addEventListener("input", validateName);
+            emailInput.addEventListener("input", validateEmail);
+            passwordInput.addEventListener("input", validatePassword);
+            ageInput.addEventListener("input", validateAge);
+
+            document
+                .getElementById("registerationForm")
+                .addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    if(
+                        validateName() &
+                        validateEmail() &
+                        validatePassword() &
+                        validateAge()
+                    ) {
+                        alert("Form submitted successfully!");
+                    }
+                });
+        });
+
+        function validateName(){
+            const name = document.getElementById("name").value.trim();
+            const error = document.getElementById("nameError");
+            if(name===""){
+                error.textContent = "Name is required";
+                return false;
+            } else {
+                error.textContent = "";
+                return true;
+            }
+        }
+        function validateEmail(){
+            const email = document.getElementById("email").value.trim();
+            const error = document.getElementById("emailError");
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!regex.test(email)){
+                error.textContent = "Invalid email format";
+                return false;
+            } else {
+                error.textContent = "";
+                return true;
+            }
+        }
+        function validatePassword(){
+            const password = document.getElementById("password").value;
+            const error = document.getElementById("passwordError");
+            if(password.length < 6){
+                error.textContent = "Password must be at least 6 characters";
+                return false;
+            } else {
+                error.textContent = "";
+                return true;
+            }
+        }
+        function validateAge(){
+            const age = parseInt(document.getElementById("age").value);
+            const error = document.getElementById("ageError");
+            if(isNaN(age) || age <= 18){
+                error.textContent = "Age must be greater than 18";
+                return false;
+            } else {
+                error.textContent = "";
+                return true;
+            }
+        }  
+    </script>
+</body>
+</html>
